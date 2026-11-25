@@ -6,4 +6,10 @@
 .clinic-row ul:empty { display:none; }
 .clinic-row li form { display:inline-block; }
 .clinic-row [role=status]:empty { display:none; }
+.clinic-row.closed { opacity:.72; background:var(--s-panel); }
+.clinic-row .moved { color:var(--s-muted); font-style:normal; font-size:.9em; }
+.clinic-row .danger { color:var(--s-error); }
+.makeup-panel { margin-bottom:1.4rem; padding:1rem 1.25rem; border:1px solid var(--s-line); border-left:4px solid var(--s-error); background:var(--s-panel); }
+.makeup-panel h2 { margin:0 0 .5rem; font-size:1.05rem; }
+.makeup-panel ul { margin:0; padding-left:1.1rem; display:grid; gap:.35rem; }
 @media(max-width:850px) { .clinic-plan {grid-template-columns:1fr} }
