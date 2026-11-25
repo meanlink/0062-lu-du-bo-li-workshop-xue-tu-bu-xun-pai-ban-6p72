@@ -1,0 +1,16 @@
+:root { --s-page:oklch(94% .03 61);--s-panel:oklch(98% .02 77);--s-ink:oklch(24% .042 38);
+ --s-accent:oklch(43% .145 40);--s-muted:oklch(43% .055 44);--s-line:oklch(75% .065 62);
+ --s-onaccent:oklch(98% .015 85); }
+.masthead { box-shadow:inset 0 3px var(--s-accent) }
+.workbench-nav a { border-radius: 0 }
+.signin-heading { border-top-width: 13px; padding: 2.2rem 0; border-bottom:1px solid var(--s-accent) }
+
+.module-heading { margin-bottom: 1.6rem; border-bottom:1px solid var(--s-line); padding-bottom: .9rem; }
+.module-heading p { max-width: 65ch; color:var(--s-muted); }
+.panel { min-width:0; padding: 1.25rem; background:var(--s-panel); border:1px solid var(--s-line); }
+.table-scroll { width: 100%; overflow:auto; }
+.compact-form { display:grid; gap:.7rem; align-content:start; }
+.compact-form button { justify-self:start; }
+[data-state=held], .status-chip.held { color:var(--s-error); }
+.status-chip.closed, .status-chip.approved, .status-chip.ready { color:var(--s-ok); }
+@media(max-width: 767px) { .panel { padding:.75rem; } }

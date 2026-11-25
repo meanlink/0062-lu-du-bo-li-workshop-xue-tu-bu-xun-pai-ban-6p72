@@ -1,0 +1,7 @@
+.mentor-ledger { display:grid; gap:1rem; }
+.mentor-band { display:grid; grid-template-columns:8rem 1fr; border:1px solid var(--s-line); }
+.mentor-band h2 { padding:1.2rem; background:var(--s-accent); color:var(--s-onaccent); margin:0; }
+.mentor-band>div { display:flex; flex-wrap:wrap; gap:1.3rem; padding:1rem 1.4rem; }
+.mentor-band article { min-width:13rem; flex:1; border-bottom:2px solid var(--s-line); padding:.4rem; }
+.mentor-band article small { display:block; margin:.35rem 0; }
+@media(max-width:600px) { .mentor-band {grid-template-columns:1fr} .mentor-band h2{padding:.55rem 1rem} }

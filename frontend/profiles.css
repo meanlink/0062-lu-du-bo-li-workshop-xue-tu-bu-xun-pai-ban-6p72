@@ -1,0 +1,8 @@
+.calculation { display:flex; gap:2rem; justify-content:space-between; align-items:center; }
+.profile-columns { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,24rem),1fr)); gap:1rem; margin-top:1rem; }
+.drivers { border-top:2px solid var(--s-line); }
+.drivers>div { display:grid; grid-template-columns:8em 1fr; gap:1rem; padding:.45rem 0; border-bottom:1px solid var(--s-line); }
+.drivers dd { margin:0; }
+.drivers label { display:grid; grid-template-columns:5em minmax(2.5em,1fr) 3em; gap:.4em; }
+.drivers meter { width:100%; accent-color:var(--s-accent); }
+@media(max-width:600px) { .calculation {display:grid; gap:.5rem} .drivers>div{display:block} }

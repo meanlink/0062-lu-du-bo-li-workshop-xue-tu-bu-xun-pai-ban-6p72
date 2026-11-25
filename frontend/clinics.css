@@ -1,0 +1,9 @@
+.clinic-plan { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
+.clinic-plan h2 { background:var(--s-accent);color:var(--s-onaccent);padding:.65rem 1rem;margin:0; }
+.clinic-row { display:grid; grid-template-columns:7em 1fr auto; align-items:start; gap:.6rem; padding:1rem; border:1px solid var(--s-line); border-top:0; }
+.clinic-row time { font-variant-numeric:tabular-nums; }
+.clinic-row ul,.clinic-row>form { grid-column:2/-1; margin:0; }
+.clinic-row ul:empty { display:none; }
+.clinic-row li form { display:inline-block; }
+.clinic-row [role=status]:empty { display:none; }
+@media(max-width:850px) { .clinic-plan {grid-template-columns:1fr} }
